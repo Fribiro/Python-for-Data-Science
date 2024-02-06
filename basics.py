@@ -151,3 +151,25 @@ for num in numbers:
     elif num == 2:
         pass 
     print(num)
+
+#exemption handling (try, except, else, finally)
+try:
+    result = 10/0
+except ZeroDivisionError:
+    print("Division by zero is not allowed")
+else:
+    print("Result", result)
+finally:
+    print("Execution completed")
+
+try:
+    x=int(input("Enter a number:"))
+except ValueError:
+    print("Division by zero is not allowed")
+finally:
+    print("Thanks for playing")
+
+#raise excemptions using the raise keyword
+    x = input("Enter a number")
+if not x.isdigit():
+    raise ValueError("That's not a valid number")
