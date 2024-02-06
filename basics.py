@@ -123,3 +123,14 @@ print(fruits1)
 
 all_fruits = fruits1.union(fruits2)
 print(all_fruits)
+
+
+#conditional statements
+#if, elif, else
+age = 70
+if age < 18: 
+    print("You're a minor")
+elif age >= 18 and age < 65:
+    print("You're an adult")
+else:
+    print("You're a senior citizen")
