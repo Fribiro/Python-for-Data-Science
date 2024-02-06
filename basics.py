@@ -134,3 +134,20 @@ elif age >= 18 and age < 65:
     print("You're an adult")
 else:
     print("You're a senior citizen")
+
+#control stt(break, continue, pass)
+numbers = [1,2,3,4,5]
+for num in numbers:
+    if num == 3:
+        break #terminates the iteration when num is 3
+    elif num == 2:
+        continue #skips the iteration when num is 2
+    print(num)
+
+#pass is a null operation meaning it does nothing
+for num in numbers:
+    if num == 3:
+        break #terminates the iteration when num is 3
+    elif num == 2:
+        pass 
+    print(num)
