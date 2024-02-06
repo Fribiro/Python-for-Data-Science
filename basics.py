@@ -162,14 +162,61 @@ else:
 finally:
     print("Execution completed")
 
-try:
-    x=int(input("Enter a number:"))
-except ValueError:
-    print("Division by zero is not allowed")
-finally:
-    print("Thanks for playing")
+# try:
+#     x=int(input("Enter a number:"))
+# except ValueError:
+#     print("Division by zero is not allowed")
+# finally:
+#     print("Thanks for playing")
 
 #raise excemptions using the raise keyword
-    x = input("Enter a number")
-if not x.isdigit():
-    raise ValueError("That's not a valid number")
+#     x = input("Enter a number")
+# if not x.isdigit():
+#     raise ValueError("That's not a valid number")
+
+#loops
+for x in ['python','go','java']:
+    print(x)
+
+Language_creators = {
+    "python": "Guido Van Rossum",
+    "c": "Dennis",
+    "java": "James",
+    "Go": "Robert",
+    "Perl": "Larry"
+}
+for key, value in Language_creators.items():
+    print("language:{} creator:{}".format(key,value))
+
+#range of numbers starting from the first one
+#last number in range is exclusive ie it's not considered in the range
+for x in range(4,10,2):
+    print(x) #result = 4,6,8
+
+for i in range(8):
+    print(i, i**2)
+
+words = ["Eddy","Sam"]
+for i in range(len(words)):
+    print(words[i])
+
+num = []
+for i in range(5):
+    num.append(i)
+    print(num)
+
+#while loop
+count = 1
+while count <=5:
+    print(count)
+    count +=1
+    if count == 4:
+        print("execution is done")
+        break
+
+#read on buffer overflows
+
+level = 0
+while(level < 10):
+    print(level)
+    level +=1
