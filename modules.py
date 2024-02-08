@@ -67,3 +67,5 @@ result_add = math_operations.add(5,3)
 print(result_add)
 
 #magic command %%writefile name.py
+#floor division
+print(11 // 2)
