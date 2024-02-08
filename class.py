@@ -35,5 +35,20 @@ class Email:
     
 #read on namming mangling
     
-e = Email("Check this out")
+e = Email("New course","Check this out")
 print(e.mark_as_read())
+
+#inheritance
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name,age)
+        self.student_id = student_id
+
+    def study(self):
+        print(f"{self.name} is studying")
+
+student = Student("John", 20, "QEJNSND")
+student.say_hello()
+student.study()
+
+#read on encapsulation and polymorphism
