@@ -52,3 +52,43 @@ student.say_hello()
 student.study()
 
 #read on encapsulation and polymorphism
+
+class Car:
+    def __init__(self,brand,model,year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def drive(self):
+        print(f"{self.brand} {self.model} is driving")
+
+    def description(self):
+        return f"{self.year} {self.brand}"
+
+car1 = Car("Toyota","Camry",2022)
+car2 = Car("Mercedes","G-Wagon",2023)
+car1.drive()
+print(car2.brand)
+car2.description()
+
+class ElectriCar(Car):
+    def __init__(self,brand,model,year,battery_capacity):
+        super().__init__(brand,model,year)
+        self.battery_capacity = battery_capacity
+
+electric_car = ElectriCar("Tesla","Cybertruck",2023,"100 kwh")
+print(electric_car.description())
+
+class Vehicle:
+    def drive(self):
+        pass
+
+class Truck(Vehicle):
+    def drive(self):
+        return "Truck is driving"
+    
+def make_drive(vehicle):
+    return vehicle.drive()
+
+truck = Truck()
+print(make_drive(truck))
